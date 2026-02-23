@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris | Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+    <nav class="navbar">
+        <div class="logo">SOLARIS <span>CONTROL</span></div>
+        <a href="index.html" class="btn-back">← Volver al Sitio</a>
+    </nav>
+
+    <div id="loginSection" style="background: #16161a; padding: 20px; border-radius: 15px; border: 2px solid #f39c12; max-width: 350px; margin: 40px auto; text-align: center;">
+    <h3 style="color: #f39c12; margin-bottom: 15px; font-family: sans-serif;">🔒 Acceso Staff</h3>
+    <input type="text" id="AUTH_USER" placeholder="Usuario" style="width: 90%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #333; background: #000; color: white;">
+    <input type="password" id="AUTH_PASS" placeholder="Contraseña" style="width: 90%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #333; background: #000; color: white;">
+    
+    <button id="btnEntrar" style="width: 90%; padding: 10px; background: #f39c12; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">ENTRAR</button>
+</div>
+
+    <div id="adminPanel" style="display: none;">
+        <div class="admin-wrapper">
+            <aside class="sidebar-admin">
+                <h2>Registrar Staff</h2>
+                <div class="form-group">
+                    <label>Nombre de Usuario</label>
+                    <input type="text" id="staffName" placeholder="Ej: SolarisPlayer">
+                </div>
+                <div class="form-group">
+                    <label>Rango Administrativo</label>
+                    <select id="staffRange">
+                        <option value="founder">Founder</option>
+                        <option value="owner">Owner</option>
+                        <option value="co-owner">Co Owner</option>
+                        <option value="ceo">C.E.O</option>
+                        <option value="head-admin">Head Admin</option>
+                        <option value="admin">Admin</option>
+                        <option value="mod">Moderator</option>
+                        <option value="support">Support</option>
+                        <option value="helper">Helper</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>URL de Avatar (Imagen)</label>
+                    <input type="text" id="staffImg" placeholder="https://link-de-imagen.com/foto.png">
+                </div>
+                <button onclick="addStaff()" class="btn-save">Guardar Miembro</button>
+                <button onclick="logout()" class="btn-delete" style="margin-top: 20px; width: 100%;">Cerrar Sesión</button>
+            </aside>
+
+            <section class="display-panel">
+                <div class="header-display">
+                    <h2>Staff Activo</h2>
+                    <span id="counter">0 Miembros</span>
+                </div>
+                <div id="staffList" class="staff-grid-admin">
+                    </div>
+            </section>
+        </div>
+    </div>
+
+    <main class="container" id="publicView">
+        <h1 class="section-title">Equipo Administrativo</h1>
+        <div id="publicStaffList" class="staff-grid-admin">
+            </div>
+    </main>
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+</html>

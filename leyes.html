@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes | Solaris RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la página de leyes */
+        .laws-wrapper {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .law-category {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        .law-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .law-card {
+            background: #111115;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #555;
+            transition: transform 0.3s ease;
+        }
+
+        .law-card:hover {
+            transform: translateY(-5px);
+            background: #1a1a20;
+        }
+
+        .law-card h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .law-card p {
+            color: #aaa;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .penalty {
+            display: inline-block;
+            background: rgba(255, 71, 87, 0.1);
+            color: #ff4757;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        /* Colores por Título para identificar rápido */
+        .cat-civil { border-left-color: #1e90ff; }
+        .cat-propiedad { border-left-color: #ffa502; }
+        .cat-personas { border-left-color: #ff4757; }
+        .cat-armas { border-left-color: #2ed573; }
+        .cat-transito { border-left-color: #eccc68; }
+        .cat-admin { border-left-color: #a29bfe; }
+
+        .disposiciones-finales {
+            background: rgba(243, 156, 18, 0.05);
+            border: 1px dashed var(--primary);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="admin-body">
+
+    <nav class="navbar">
+        <div class="logo">SOLARIS <span>LEYES</span></div>
+        <a href="index.html" class="btn-back">← Volver al Sitio</a>
+    </nav>
+
+    <div class="laws-wrapper">
+        <header style="text-align: center; margin-bottom: 60px;">
+            <h1 class="section-title">Código Jurídico de Solaris</h1>
+            <p style="color: #888;">Regulación de convivencia, actuación policial y responsabilidad penal.</p>
+        </header>
+
+        <section class="law-category">
+            <h2 class="category-title">⚖️ Título I — Identidad y Orden Civil</h2>
+            <div class="law-grid">
+                <div class="law-card cat-civil">
+                    <h3>Art. 1 — Identificación obligatoria</h3>
+                    <p>Todo ciudadano debe identificarse ante autoridad competente cuando sea requerido.</p>
+                    <span class="penalty">Requerimiento oficial</span>
+                </div>
+                <div class="law-card cat-civil">
+                    <h3>Art. 2 — Suplantación de identidad</h3>
+                    <p>Hacerse pasar por otra persona o funcionario público.</p>
+                    <span class="penalty">Detención Mayor</span>
+                </div>
+                <div class="law-card cat-civil">
+                    <h3>Art. 3 — Falsa denuncia</h3>
+                    <p>Reportar delitos inexistentes o alterar hechos.</p>
+                    <span class="penalty">Multa + Detención</span>
+                </div>
+                <div class="law-card cat-civil">
+                    <h3>Art. 4 — Perturbación del orden</h3>
+                    <p>Alterar la paz pública, provocar disturbios o incitar caos.</p>
+                    <span class="penalty">Multa o Arresto</span>
+                </div>
+                <div class="law-card cat-civil">
+                    <h3>Art. 5 — Desacato a la autoridad</h3>
+                    <p>Negarse a obedecer órdenes directas de un funcionario en servicio.</p>
+                    <span class="penalty">Arresto Inmediato</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="law-category">
+            <h2 class="category-title">🏠 Título II — Delitos contra la Propiedad</h2>
+            <div class="law-grid">
+                <div class="law-card cat-propiedad">
+                    <h3>Art. 6 — Hurto menor</h3>
+                    <p>Sustracción sin violencia ni intimidación.</p>
+                    <span class="penalty">Multa</span>
+                </div>
+                <div class="law-card cat-propiedad">
+                    <h3>Art. 7 — Robo</h3>
+                    <p>Sustracción mediante amenaza o participación criminal.</p>
+                    <span class="penalty">Cárcel Media</span>
+                </div>
+                <div class="law-card cat-propiedad">
+                    <h3>Art. 8 — Robo agravado</h3>
+                    <p>Uso de arma o daño físico durante el robo.</p>
+                    <span class="penalty">Cárcel Alta</span>
+                </div>
+                <div class="law-card cat-propiedad">
+                    <h3>Art. 9 — Allanamiento</h3>
+                    <p>Entrar a propiedad privada sin autorización.</p>
+                    <span class="penalty">Detención</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="law-category">
+            <h2 class="category-title">🩸 Título III — Delitos contra las Personas</h2>
+            <div class="law-grid">
+                <div class="law-card cat-personas">
+                    <h3>Art. 11 — Agresión física</h3>
+                    <p>Golpear sin intención letal.</p>
+                    <span class="penalty">Cárcel Corta</span>
+                </div>
+                <div class="law-card cat-personas">
+                    <h3>Art. 14 — Homicidio</h3>
+                    <p>Privar de la vida a otro ciudadano.</p>
+                    <span class="penalty">Pena Máxima</span>
+                </div>
+                <div class="law-card cat-personas">
+                    <h3>Art. 15 — Secuestro</h3>
+                    <p>Retener contra su voluntad a un ciudadano.</p>
+                    <span class="penalty">Pena Máxima Agravada</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="law-category">
+            <h2 class="category-title">🔫 Título IV — Armamento</h2>
+            <div class="law-grid">
+                <div class="law-card cat-armas">
+                    <h3>Art. 16 — Portación ilegal</h3>
+                    <p>Poseer arma sin licencia.</p>
+                    <span class="penalty">Incautación + Cárcel</span>
+                </div>
+                <div class="law-card cat-armas">
+                    <h3>Art. 18 — Tráfico de armas</h3>
+                    <p>Distribuir armamento ilegal.</p>
+                    <span class="penalty">Pena Máxima</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="law-category">
+            <h2 class="category-title">🚘 Título V — Tránsito</h2>
+            <div class="law-grid">
+                <div class="law-card cat-transito">
+                    <h3>Art. 19 — Conducción imprudente</h3>
+                    <p>Manejar poniendo en riesgo a terceros.</p>
+                    <span class="penalty">Multa</span>
+                </div>
+                <div class="law-card cat-transito">
+                    <h3>Art. 20 — Fuga policial</h3>
+                    <p>No detenerse ante orden oficial.</p>
+                    <span class="penalty">Cárcel Media</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="disposiciones-finales">
+            <h2 style="color: var(--primary); margin-top: 0;">📌 Disposiciones Generales</h2>
+            <ul style="color: #ccc; line-height: 2;">
+                <li>La <strong>reincidencia</strong> aumenta la pena significativamente.</li>
+                <li>La <strong>cooperación</strong> con la policía puede reducir la condena.</li>
+                <li>El desconocimiento de estas leyes no invalida la sanción aplicada.</li>
+                <li>La autoridad puede usar criterio proporcional según la situación.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>

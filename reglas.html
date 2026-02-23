@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglamento | Solaris RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .rules-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .rule-section {
+            background: #111115;
+            border: 1px solid #222;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .rule-header {
+            background: #1a1a20;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+        }
+
+        .rule-header h2 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rule-content {
+            padding: 25px;
+            color: #ccc;
+            line-height: 1.8;
+        }
+
+        .rule-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 2px solid #333;
+        }
+
+        .rule-item strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .warn-box {
+            background: rgba(255, 71, 87, 0.1);
+            border: 1px solid #ff4757;
+            padding: 15px;
+            border-radius: 10px;
+            color: #ff4757;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .speed-tag {
+            background: #333;
+            color: var(--primary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .copyright-footer {
+            text-align: center;
+            color: #555;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body class="admin-body">
+
+    <nav class="navbar">
+        <div class="logo">SOLARIS <span>REGLAS</span></div>
+        <a href="index.html" class="btn-back">← Volver al Sitio</a>
+    </nav>
+
+    <div class="rules-container">
+        <header style="text-align: center; margin-bottom: 50px;">
+            <h1 class="section-title">Normativa Oficial</h1>
+            <p style="color: #888;">El desconocimiento de estas reglas no te exime de las sanciones.</p>
+        </header>
+
+        <div class="rule-section">
+            <div class="rule-header">
+                <h2>1. Normas Generales</h2>
+            </div>
+            <div class="rule-content">
+                <div class="rule-item"><strong>Respeto:</strong> Obligatorio hacia todos los integrantes de la comunidad.</div>
+                <div class="rule-item"><strong>Privacidad:</strong> Prohibido compartir información personal (Doxing).</div>
+                <div class="rule-item"><strong>Publicidad:</strong> No se permite Spam de otros servidores o servicios.</div>
+                <div class="rule-item"><strong>Toxicidad:</strong> Cero tolerancia al racismo, acoso o insultos OOC.</div>
+                <div class="rule-item"><strong>Hacks/Exploits:</strong> Baneo inmediato por uso de ventajas injustas.</div>
+            </div>
+        </div>
+
+        <div class="rule-section" style="border-color: #ff4757;">
+            <div class="rule-header" style="background: rgba(255, 71, 87, 0.05);">
+                <h2 style="color: #ff4757;">2. Sistema de Warns</h2>
+            </div>
+            <div class="rule-content">
+                <p>Recibirás un WARN por: Antirol (PG, MG, DM, etc), hablar OOC sin "//", toxicidad leve, ignorar al staff o pings innecesarios al Owner.</p>
+                <div class="warn-box">
+                    ⚠️ 5 WARNS = BANEO PERMANENTE
+                </div>
+                <p style="font-size: 0.8rem; margin-top: 10px; color: #777;">* Los warns solo se borran con aprobación de CEO o Owner.</p>
+            </div>
+        </div>
+
+        <div class="rule-section">
+            <div class="rule-header">
+                <h2>3. Normas de Rol (In-Game)</h2>
+            </div>
+            <div class="rule-content">
+                <div class="rule-item"><strong>Valorar Vida:</strong> Si te apuntan, obedeces. No puedes sacar arma si ya tienes un cañón encima.</div>
+                <div class="rule-item"><strong>Velocidades:</strong> 
+                    Normal: <span class="speed-tag">120 MPH</span> | 
+                    FRP: <span class="speed-tag">170+ MPH</span> | 
+                    Persecución: <span class="speed-tag">190 MPH Max</span>
+                </div>
+                <div class="rule-item"><strong>Choques:</strong> Menos de 35 MPH rol simple (/se soba). Más de 35 MPH obligatorio llamar EMS.</div>
+                <div class="rule-item"><strong>Realismo:</strong> Prohibido modelos deformes o colores de piel irreales.</div>
+                <div class="rule-item"><strong>Toque de Queda:</strong> 11:00 PM todos en casa (menos negocios 24/7).</div>
+                <div class="rule-item"><strong>Domingos:</strong> No se trabaja (Día de descanso), excepto negocios de comida autorizados.</div>
+            </div>
+        </div>
+
+        <div class="rule-section">
+            <div class="rule-header">
+                <h2>4. Canales de Voz y Texto</h2>
+            </div>
+            <div class="rule-content">
+                <ul style="padding-left: 20px;">
+                    <li>No hacer WallText ni abuso de emojis.</li>
+                    <li>Tickets obligatorios para soporte.</li>
+                    <li>No gritar ni poner música en canales de voz (salvo canales de música).</li>
+                    <li>No grabar sin consentimiento de los presentes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            © 2025-2026 Solaris RP — Todos los derechos reservados
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+:root {
+    --primary: #f39c12;
+    --dark-bg: #0a0a0b;
+    --nav-bg: #121214;
+    --text-color: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://media.discordapp.net/attachments/1433131544855445709/1475289850130206811/TEMPORADA_1.png?ex=699cf23d&is=699ba0bd&hm=98c49f757e55fa69c24d5a238cf52e6dcac558824f4725f7cd2445f34899ab8d&=&format=webp&quality=lossless&width=1194&height=597');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Navbar superior */
+.navbar {
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 2px solid var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+.logo span { color: var(--primary); }
+
+nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
+nav a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
+nav a:hover, nav a.active { color: var(--primary); }
+
+.btn-discord {
+    background: #5865F2;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+/* Sección de Introducción */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    /* Puedes poner una imagen de Roblox de fondo aquí */
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+.hero-content { max-width: 800px; }
+.hero-content h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 20px; }
+.hero-content p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px; }
+
+.btn-main {
+    display: inline-block;
+    background: var(--primary);
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.admin-panel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input, select {
+    padding: 12px;
+    background: #25252b;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-main {
+    cursor: pointer;
+    border: none;
+}
+
+/* Reset y Fuentes */
+body.admin-body {
+    background: #08080a;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.admin-wrapper {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    height: calc(100vh - 80px);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar del Formulario */
+.sidebar-admin {
+    background: #111115;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sidebar-admin input, .sidebar-admin select {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a20;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+.btn-save {
+    width: 100%;
+    padding: 15px;
+    background: #f39c12;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-save:hover { background: #e67e22; transform: scale(1.02); }
+
+/* Grid de Staff */
+.display-panel {
+    background: #111115;
+    border-radius: 20px;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.staff-grid-admin {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjetas Estilo Discord */
+.staff-card-pro {
+    background: #1a1a20;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid #f39c12;
+}
+
+.staff-card-pro img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #f39c12;
+}
+
+.badge-pro {
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background: rgba(243, 156, 18, 0.2);
+    color: #f39c12;
+}
+
+.btn-delete {
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.staff-card-pro img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Esto la hace redonda */
+    object-fit: cover;
+    border: 3px solid var(--primary); /* El borde de color */
+    background: #2f3136; /* Color de fondo de Discord por si la imagen falla */
+}
+
+.admin-login {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.btn-admin-access {
+    background: transparent;
+    border: 1px solid #333;
+    color: #555;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+.btn-admin-access:hover { color: var(--primary); border-color: var(--primary); }
+#loginSection {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid var(--primary);
+}
+
+#loginSection input {
+    margin: 5px;
+    padding: 8px;
+    background: #1a1a20;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 5px;
+}
+body {
+    /* Fondo con capa oscura para que se lea el texto */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.alphacoders.com/134/1341050.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
