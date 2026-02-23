@@ -257,14 +257,3 @@ body.admin-body {
     color: white;
     border-radius: 5px;
 }
-body {
-    /* Fondo con capa oscura para que se lea el texto */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('https://images.alphacoders.com/134/1341050.png'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-    color: white;
-    font-family: sans-serif;
-}
